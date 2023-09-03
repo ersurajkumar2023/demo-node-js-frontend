@@ -33,7 +33,7 @@ const Edit = () => {
   const [preview, setPreview] = useState("");
 
   const {update,setUpdate} = useContext(updateData)
-
+  console.log("update===>",update);
  const navigate = useNavigate();
 
   const [showspin, setShowSpin] = useState(true);
