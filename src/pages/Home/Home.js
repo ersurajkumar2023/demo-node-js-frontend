@@ -88,7 +88,8 @@ const Home = () => {
     setTimeout(()=>{
         setShowSpin(false)
     },1200)
-  },[search, gender, status, sort, page, userGet])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[search,gender,status,sort,page])
 
   return (
     <>
