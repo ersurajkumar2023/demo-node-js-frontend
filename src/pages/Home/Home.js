@@ -88,7 +88,7 @@ const Home = () => {
     setTimeout(()=>{
         setShowSpin(false)
     },1200)
-  })
+  },[search,gender,status,sort,page])
 
   return (
     <>
