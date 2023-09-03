@@ -129,7 +129,7 @@ const Edit = () => {
 
   useEffect(()=>{
     userProfileGet();
-  },[id])
+  })
 
   useEffect(() => {
     if (image) {
@@ -178,7 +178,7 @@ const Edit = () => {
                     label={`Male`}
                     name="gender"
                     value={"Male"}
-                    checked={inputdata.gender == "Male" ? true:false}
+                    checked={inputdata.gender === "Male" ? true:false}
                     onChange={setInputValue}
                   />
                   <Form.Check
@@ -186,7 +186,7 @@ const Edit = () => {
                     label={`Female`}
                     name="gender"
                     value={"Female"}
-                    checked={inputdata.gender == "Female" ? true:false}
+                    checked={inputdata.gender === "Female" ? true:false}
                     onChange={setInputValue}
                   />
                 </Form.Group>

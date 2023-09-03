@@ -31,7 +31,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const { useradd, setUseradd } = useContext(addData);
-  console.log("useradd===>",useradd);
+  console.log("useradd===>",useradd)
   // status optios
   const options = [
     { value: 'Active', label: 'Active' },

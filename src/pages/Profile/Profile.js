@@ -31,7 +31,7 @@ const Profile = () => {
     setTimeout(() => {
       setShowSpin(false)
     }, 1200)
-  }, [id])
+  })
   return (
     <>
       {

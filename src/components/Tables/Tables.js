@@ -51,11 +51,11 @@ const Tables = ({ userdata, deleteUser, userGet, handlePrevious, handleNext, pag
                             <td>{index + 1 + (page - 1)*4}</td> 
                             <td>{element.fname + element.lname}</td>
                             <td>{element.email}</td>
-                            <td>{element.gender == "Male" ? "M" : "F"}</td>
+                            <td>{element.gender === "Male" ? "M" : "F"}</td>
                             <td className='d-flex align-items-center'>
                               <Dropdown className='text-center'>
                                 <Dropdown.Toggle className='dropdown_btn' id="dropdown-basic">
-                                  <Badge bg={element.status == "Active" ? "primary" : "danger"}>
+                                  <Badge bg={element.status === "Active" ? "primary" : "danger"}>
                                     {element.status} <i class="fa-solid fa-angle-down"></i>
                                   </Badge>
                                 </Dropdown.Toggle>
